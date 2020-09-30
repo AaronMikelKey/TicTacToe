@@ -3,10 +3,24 @@ html, body, .container {
     width: 100%;
 }
 
+.container {
+    text-align: center;
+}
+
+#instructions {
+    height: 100px;
+}
+
+#x , #o {
+    display: inline-block;
+    border: 1px solid black;
+    width: 120px;
+}
+
 #gameboard {
+    margin: auto;
     height: 360px;
     width: 360px;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,4 +43,16 @@ html, body, .container {
 
 .bot {
     box-shadow: 1px 0 0 0 black;
+}
+
+.right {
+    box-shadow: 0 1px 0 0;
+}
+
+#botRight {
+    box-shadow: 0 0 0 0;
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -5,18 +5,26 @@
     </head>
     <body>
         <div class="container">
-            <div id="gameboard">
-                <div class="square top" id="topLeft"><span>X</span></div>
-                <div class="square top" id="topCenter"><span>X</span></div>
-                <div class="square top" id="topRight"><span>O</span></div>
-                <div class="square mid" id="midLeft"><span>X</span></div>
-                <div class="square mid" id="midCenter"><span>X</span></div>
-                <div class="square mid" id="midRight"><span>O</span></div>
-                <div class="square bot" id="botLeft"><span>O</span></div>
-                <div class="square bot" id="botCenter"><span>O</span></div>
-                <div class="square bot" id="botRight"><span>X</span></div>
+            <div id="instructions">
+                <h1>Tic Tac Toe</h1>
+                <p>Simple Tic Tac Toe game.  Choose X or O to begin playing</p>
+                <div id="choose">
+                    <div class="square" id="x" value="x">X</div>
+                    <div class="square" id="o" value="o">O</div>
+                </div>
+            </div>
+            <div class="hidden" id="gameboard">
+                <div class="square top" id="topLeft"><span></span></div>
+                <div class="square top" id="topCenter"><span></span></div>
+                <div class="square top right" id="topRight"><span></span></div>
+                <div class="square mid" id="midLeft"><span></span></div>
+                <div class="square mid" id="midCenter"><span></span></div>
+                <div class="square mid right" id="midRight"><span></span></div>
+                <div class="square bot" id="botLeft"><span></span></div>
+                <div class="square bot" id="botCenter"><span></span></div>
+                <div class="square bot" id="botRight"><span></span></div>
             </div>
         </div>
-        <link src="script.js">
+        <script src="./script.js"></script>
     </body>
 </html>
