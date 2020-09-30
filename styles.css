@@ -1,0 +1,32 @@
+html, body, .container {
+    height: 100%;
+    width: 100%;
+}
+
+#gameboard {
+    height: 360px;
+    width: 360px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.square {
+    padding: 41px 0;
+    flex: 1 0 120px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.top {
+    box-shadow: 1px 1px 0 0 black;
+}
+
+.mid {
+    box-shadow: 1px 1px 0 0 black;
+}
+
+.bot {
+    box-shadow: 1px 0 0 0 black;
+}
